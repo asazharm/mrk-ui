@@ -1,8 +1,10 @@
 import { IsNotEmpty } from 'class-validator';
 
 export class CreateVacationDto {
+  @IsNotEmpty()
   orderDate: string;
 
+  @IsNotEmpty()
   orderNumber: string;
 
   @IsNotEmpty()
@@ -13,4 +15,7 @@ export class CreateVacationDto {
 
   @IsNotEmpty()
   vacationPeriod: string;
+
+  @IsNotEmpty()
+  username: string;
 }

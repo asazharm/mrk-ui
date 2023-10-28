@@ -14,5 +14,7 @@ export class VacationModel extends Document implements IVacation {
   workingYear: string;
   @Prop({ required: true })
   vacationPeriod: string;
+  @Prop({ required: true })
+  username: string;
 }
 export const VacationSchema = SchemaFactory.createForClass(VacationModel);

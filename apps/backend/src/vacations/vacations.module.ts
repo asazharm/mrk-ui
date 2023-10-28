@@ -5,6 +5,7 @@ import { JwtModule } from '@nestjs/jwt';
 import { VacationsController } from './vacations.controller';
 import { VacationsService } from './vacations.service';
 import { VacationModel, VacationSchema } from './models/vacation.model';
+import { UsersModule } from '../users/users.module';
 
 @Module({
   imports: [
@@ -16,6 +17,7 @@ import { VacationModel, VacationSchema } from './models/vacation.model';
       },
     ]),
     JwtModule,
+    UsersModule,
   ],
   providers: [VacationsService],
   controllers: [VacationsController],

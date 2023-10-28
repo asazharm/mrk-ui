@@ -4,4 +4,5 @@ export interface IVacation {
   vacationType: string;
   workingYear: string;
   vacationPeriod: string; //  Արձակուրդի ժամանակահատվածը
+  username: string; //  Արձակուրդի ժամանակահատվածը
 }

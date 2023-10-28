@@ -8,9 +8,10 @@ import { AuthModule } from '../auth/auth.module';
 import { UsersModule } from '../users/users.module';
 import { JwtModule } from '@nestjs/jwt';
 import { CoreModule } from '../core/core.module';
+import { VacationsModule } from '../vacations/vacations.module';
 
 @Module({
-  imports: [CoreModule, AuthModule, UsersModule],
+  imports: [CoreModule, AuthModule, UsersModule, VacationsModule],
   controllers: [AppController],
   providers: [AppService],
 })
