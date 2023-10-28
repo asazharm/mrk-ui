@@ -1,1 +1,23 @@
+// @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat' !important;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  src: url('./assets/fonts/Montserrat/Montserratarm-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  src: url('./assets/fonts/Montserrat/Montserratarm-Medium.otf');
+}
+
 /* You can add global styles to this file, and also import other style files */

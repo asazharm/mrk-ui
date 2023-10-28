@@ -14,7 +14,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@org/storybook-host": ["libs/storybook-host/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
