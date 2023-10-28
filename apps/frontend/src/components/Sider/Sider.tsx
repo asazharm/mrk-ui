@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import {
   CalendarOutlined,
   CheckCircleOutlined,
+  DeploymentUnitOutlined,
   FileDoneOutlined,
   FileTextOutlined,
   LogoutOutlined,
@@ -51,6 +52,15 @@ const fields = [
   {
     icon: <CheckCircleOutlined />,
     key: 'Համալրում',
+  },
+  {
+    icon: <DeploymentUnitOutlined />,
+    key: 'structure',
+    path: 'structure',
+    subfields: [
+      { key: 'inline', path: 'inline' },
+      { key: 'tree', path: 'tree' },
+    ],
   },
   {
     icon: <WarningOutlined />,
