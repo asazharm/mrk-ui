@@ -128,7 +128,7 @@ export default function Sider({
     >
       <Space
         direction="vertical"
-        className="justify-between flex h-full overflow-scroll "
+        className="justify-between flex h-full overflow-scroll scrollbar-none"
       >
         <Menu
           className="h-full w-full"
