@@ -75,14 +75,15 @@ export class UsersService {
         salt
       ); // bycrypt создаёт хеш пароля
 
+      console.log(createUserDto);
       const user: UserModel = await new this.userModel({
-        password: hashPassword,
+        ...createUserDto,
         biometrics: {
           firstname,
           lastname,
           email,
         },
-        ...createUserDto,
+        password: hashPassword,
       });
 
       await user.save(); // Сохраняем в БД
