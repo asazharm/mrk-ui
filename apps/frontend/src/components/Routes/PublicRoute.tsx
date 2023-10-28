@@ -5,10 +5,10 @@ import { useSelector } from 'react-redux';
 import { RootState } from '../../store';
 
 interface ProtectedRouteProps {
-  children: React.ReactNode;
+  children: JSX.Element;
 }
 
-export default function ProtectedRoute({ children }: ProtectedRouteProps) {
+export default function ProtectedRoute({ children }: ProtectedRouteProps): JSX.Element {
   const token = localStorage.getItem('token');
 
   // const { user } = useSelector((state: RootState) => state.userState);
