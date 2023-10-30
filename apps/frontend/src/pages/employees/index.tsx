@@ -3,7 +3,9 @@ import { Route, Routes, useParams } from 'react-router-dom';
 import PersonalPage from './personal.page';
 import CreatePage from './create.page';
 import UsersPage from './users.page';
+import VacationsPage from './vacations.page';
 import { Space } from 'antd';
+import EmployeeVacation from './EmployeeVacation.page';
 
 export default function Employees() {
   const { page } = useParams();
@@ -20,6 +22,14 @@ export default function Employees() {
     {
       path: '/createUser',
       Component: CreatePage,
+    },
+    {
+      path: '/vacations',
+      Component: VacationsPage,
+    },
+    {
+      path: '/vacations/:username',
+      Component: EmployeeVacation,
     },
   ];
 
