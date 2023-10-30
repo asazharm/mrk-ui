@@ -3,7 +3,7 @@ import { Route, Routes, useParams } from 'react-router-dom';
 import { Space } from 'antd';
 import InlinePage from './inline.page';
 import TreePage from './tree.page';
-
+import "tw-elements-react/dist/css/tw-elements-react.min.css";
 export default function Employees() {
   const { page } = useParams();
 
